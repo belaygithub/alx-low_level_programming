@@ -1,4 +1,4 @@
-#iclude "main.h"
+#include "main.h"
 /**
  * _isalpha - Return 1 if c is a letter.
  *
