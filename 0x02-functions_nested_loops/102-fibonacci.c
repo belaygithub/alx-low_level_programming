@@ -28,6 +28,6 @@ j += i;
 i = k;
 count++;
 }
- 
+
 return (0);
 }
