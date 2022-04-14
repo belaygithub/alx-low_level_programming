@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_traingle -print a triangle of squares
  * @size: the size of the squares triangle
@@ -7,7 +8,7 @@
  */
 void print_triangle(int size)
 {
-int a, b , c;
+int a, b, c;
 
 if (size <= 0)
 {
