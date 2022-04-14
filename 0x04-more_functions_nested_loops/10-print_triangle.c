@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * print_traingle -print a triangle of squares
+ * print_traingle - print a triangle of squares
  * @size: the size of the squares triangle
- *
  * Return: 0
  */
 void print_triangle(int size)
 {
-int a, b, c;
+int a;
+int b;
+int c;
 
 if (size <= 0)
 {
@@ -22,6 +23,7 @@ for (b = size - a; b > 1; b--)
 {
 _putchar(32);
 }
+
 for (c = 0; c <= a; c++)
 {
 _putchar(35);
