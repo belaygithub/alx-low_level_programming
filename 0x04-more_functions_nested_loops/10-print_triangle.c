@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_traingle - print a triangle of squares
+ * print_triangle - print a triangle of squares
  * @size: the size of the squares triangle
  * Return: 0
  */
