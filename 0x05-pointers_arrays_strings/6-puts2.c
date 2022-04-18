@@ -6,7 +6,7 @@
  * Return: void which means it is correct
  */
 
-void puts(char *str)
+void puts2(char *str)
 {
 int a;
 
