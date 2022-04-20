@@ -41,7 +41,7 @@ printf(".");
 
 if (x >= size)
 continue;
-      
+
 printf("\n");
 }
 
