@@ -26,7 +26,7 @@ return (0);
  * @b: string to be searched
  * Return: 1 if there is coincidence, otherwise 0
  */
-int coincidence(char *a, char b)
+int coincidence(char *a, char *b)
 {
 while (*b && *b == *a)
 {
