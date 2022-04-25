@@ -7,18 +7,18 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-  while (*haystack)
-    {
-      if ((*haystack == *needle && coincidence(haystack, needle) == 1) || !*needle)
-	{
-	  return (haystack);
-	}
-      else
-	{
-	  haystack++;
-	}
-    }
-      return (0);
+while (*haystack)
+{
+if ((*haystack == *needle && coincidence(haystack, needle) == 1) || !*needle)
+{
+return (haystack);
+}
+else
+{
+haystack++;
+}
+}
+return (0);
 }
 /**
  * coincidence - defines if the string b is inside a
