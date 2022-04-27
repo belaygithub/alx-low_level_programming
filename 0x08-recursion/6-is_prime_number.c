@@ -26,7 +26,7 @@ return (is_prime_manual(n, 2));
  * @i: counter or divisor of n
  * Return: 1 if it is prime 0 otherwise
  */
-int is_prime_manual(iny n, int i)
+int is_prime_manual(int n, int i)
 {
 if (n % i == 0)
 {
