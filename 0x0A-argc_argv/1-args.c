@@ -2,8 +2,8 @@
 /**
  * main - prints the number of arguments
  * @argv: the character to print
- *@argc: the character to print
- * Return:
+ * @argc: the character to print
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
