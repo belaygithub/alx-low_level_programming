@@ -31,7 +31,7 @@ if (value[i] <= amount)
 {
 coins = coins + (amount / value[i]);
 amount = amount - (amount / value[i]) * value[i];
-if (amount = 0)
+if (amount == 0)
 {
 printf("%d\n", coins);
 break;
