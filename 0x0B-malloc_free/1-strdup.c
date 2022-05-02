@@ -18,7 +18,7 @@ return (NULL);
 while (*(str + strSize))
 strSize++;
 strSize++; /* add 1 to print NULL */
-copyStr = malloc((strSize) * sizeof(char));
+copyStr = malloc((strSize) *sizeof(char));
 if (copyStr == NULL)
 return (0);
 for (i = 0; i < (strSize); i++)
