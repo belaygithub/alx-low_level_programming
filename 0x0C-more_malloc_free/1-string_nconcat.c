@@ -1,45 +1,39 @@
-#include <stdlib.h>
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
- * string_nconcat - len of 1st str, len of 2nd str, if n < 2nd, 2nd = n
- * 2nd + 1st = total len, malloc + null byte, loop to insert into temp arr
- * @s1: input one
- * @s2: input two
- * @n: s2's number of bytes
- * Return: 0
+ * string_nconcat- concatenate 2 strings, the size of 2nd string is defined.
+ * @s1: string 1.
+ * @s2: string 2, concatenated to 1
+ * @n: size of s2 concatenated
+ * Return: pointer to the concatenated string.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-char *arr;
-unsigned int i, j, co, co_2;
+unsigned int s1Size, s2Size, i, nSize;
+char *conStr;
+i = 0;
+s1Size = 0;
+s2Size = 0;
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
-for (i = 0; s1[i] != '\0'; i++)
-{
-}
-
-for (j = 0; s2[j] != '\0'; j++)
-{
-}
-if (n < j)
-j = n;
-j += i;
-arr = malloc(sizeof(char *) * (j + 1));
-if (arr == NULL)
+while (*(s1 + s1Size))
+s1Size++;
+while (*(s2 + s2Size))
+s2Size++;
+if (n >= s2Size)
+nSize = s2Size;
+else
+nSize = n;
+conStr = malloc((s1Size + nSize + 1) * sizeof(char));
+if (conStr == NULL)
 return (NULL);
-
-for (co = 0; co < i; co++)
-arr[co] = s1[co];
-for (co_2 = 0; co < j; co_2++)
-{
-arr[co] = s2[co_2];
-co++;
-}
-co++;
-arr[co] = '\0';
-
-return (arr);
+for (i = 0; i < s1Size; i++)
+*(conStr + i) = *(s1 + i);
+for (i = s1Size; i < (s1Size + nSize); i++)
+*(conStr + i) = *(s2 + i - s1Size);
+*(conStr + i) = '\0';
+return (conStr);
 }
