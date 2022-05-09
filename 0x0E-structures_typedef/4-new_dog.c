@@ -5,16 +5,14 @@
  * @name: string from main, name of pet
  * @age: number from main, age of pet
  * @owner: string from main, owner of pet
- * Return: p
+ * Return: dog_t
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *p;
-/* reserving memory to struct*/
 p = malloc(sizeof(dog_t));
 if (p == NULL)
 return (NULL);
-/* Counting name pointer*/
 if (name == NULL)
 {
 free(p);
