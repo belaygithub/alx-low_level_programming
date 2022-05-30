@@ -25,7 +25,7 @@ return (0);
 rcount = read(fd, buffer, letters);
 if (rcount == -1)
 return (0);
-wcount = write(STDOUT_FILENO, buffer, rcount); 
+wcount = write(STDOUT_FILENO, buffer, rcount);
 if (wcount == -1 || rcount != wcount)
 return (0);
 free(buffer);
